@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <i class="fa-solid fa-bars menu"></i>
+        <div class="logo">
+          <i class="fa-solid fa-store"></i>
+          <h2>myStore</h2>
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <button class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="slid-container">
+        <div class="slid-card">
+          <img src="images/Screenshort3.png" alt="img" />
+        </div>
+        <div class="slid-card">
+          <img src="images/Screenshort1.png" alt="img" />
+        </div>
+        <div class="slid-card">
+          <img src="images/Screenshort2.png" alt="img" />
+        </div>
+        <div class="slid-card">
+          <img src="images/Screenshort3.png" alt="img" />
+        </div>
+        <div class="slid-card">
+          <img src="images/Screenshort1.png" alt="img" />
+        </div>
+        <div class="slid-card">
+          <img src="images/Screenshort2.png" alt="img" />
+        </div>
+      </div>
+      <section class="all-categorys">
+        <h2 class="heading">Categories</h2>
+        <i
+          class="fa-solid fa-chevron-left left-arrow"
+          onclick="scrolLeft(event.target)"
+        ></i>
+        <i
+          class="fa-solid fa-chevron-right right-arrow"
+          onclick="scrollRight(event.target)"
+        ></i>
+        <div class="wrapper scroll-container">
+          <div class="category-list">
+          </div>
+        </div>
+      </section>
+      <section class="ad-banner">
+        <h2 class="heading">Best Offers</h2>
+        <div class="ad-wrapper">
+         <div class="poster-container">
+          <div class="poster">
+            <img
+              src="/images/card1.jpg"
+              alt="img"
+            />
+          </div>
+          <div class="poster">
+            <img
+              src="/images/card2.jpg"
+              alt="img"
+            />
+          </div>
+          <div class="poster">
+            <img
+              src="/images/card3.jpg"
+              alt="img"
+            />
+          </div>
+         </div>
+          <div class="poster2">
+            <img
+              src="/images/storeBanner.png"
+              alt="img"
+            />
+          
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contect-container">
+        <div class="contect-detail">
+          <span class="number"
+            ><i class="fa-regular fa-address-card"></i> +91 0000000000</span
+          >
+          <span class="email"
+            ><i class="fa-regular fa-envelope"></i> abcd@gmail.com</span
+          >
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <p>Categories</p>
+          <li><a href="#none">Fruits and Vegetables</a></li>
+          <li><a href="#none">Grocery & Staples</a></li>
+          <li><a href="#none">Dairy </a></li>
+          <li><a href="#none">Snacks</a></li>
+          <li><a href="#none">Home Care</a></li>
+          <li><a href="#none">Noodles & Sauces</a></li>
+          <li><a href="#none">More...</a></li>
+        </ul>
+
+        <ul>
+          <p>Useful Links</p>
+          <li><a href="#none">About Us</a></li>
+          <li><a href="#none">Featured Products</a></li>
+          <li><a href="#none">Offers</a></li>
+          <li><a href="#none">Blog</a></li>
+          <li><a href="#none">FAQ</a></li>
+          <li><a href="#none">Careers</a></li>
+          <li><a href="#none">Contact Us</a></li>
+        </ul>
+        <ul>
+          <p>Support</p>
+          <li><a href="#none">Email</a></li>
+          <li><a href="#none">Phone Call</a></li>
+          <li><a href="#none">Web Chat</a></li>
+          <li><a href="#none">Social Media</a></li>
+          <li><a href="#none">FAQ</a></li>
+          <li><a href="#none">Careers</a></li>
+          <li><a href="#none">Contact Us</a></li>
+        </ul>
+        <form class="feedback-form">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Massage"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+      <div class="copyright">
+        <p>&#169; Copyright 2022 demo site . All rights reserved</p>
+      </div>
+    </footer>
+
+    <div class="black-background"></div>
+
+    <div class="cart-container">
+      <div class="cart-head">
+        <h2>My Cart</h2>
+        <button class="cart-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="cart-card-container"> 
+      </div>
+
+      <!-- checkout -->
+      
+      <div class="checkout">
+        <div class="bill">
+          <span class="subtotal">Subtotal</span>
+          <span class="total-rs">200₹</span>
+        </div>
+        <div class="bill">
+          <span class="tax">Tax & Fees</span> <span class="total-tax">5₹</span>
+        </div>
+        <div class="bill">
+          <span class="delivery">Delivery</span>
+          <span class="delivery-rs"> Free</span>
+        </div>
+        <div class="bill">
+          <span>Total</span> <span class="total">205₹</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
