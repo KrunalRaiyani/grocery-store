@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>myStore - Grocery Store</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -35,11 +42,20 @@
           <a href="#">Services</a>
           <a href="#">Contact Us</a>
           <button class="close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-x-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
             </svg>
-        </button>
+          </button>
         </div>
         <button class="cart">
           <i class="fa-solid fa-cart-shopping"></i>
@@ -78,39 +94,25 @@
           onclick="scrollRight(event.target)"
         ></i>
         <div class="wrapper scroll-container">
-          <div class="category-list">
-          </div>
+          <div class="category-list"></div>
         </div>
       </section>
       <section class="ad-banner">
         <h2 class="heading">Best Offers</h2>
         <div class="ad-wrapper">
-         <div class="poster-container">
-          <div class="poster">
-            <img
-              src="/images/card1.jpg"
-              alt="img"
-            />
+          <div class="poster-container">
+            <div class="poster">
+              <img src="images/card1.jpg" alt="img" />
+            </div>
+            <div class="poster">
+              <img src="images/card2.jpg" alt="img" />
+            </div>
+            <div class="poster">
+              <img src="images/card3.jpg" alt="img" />
+            </div>
           </div>
-          <div class="poster">
-            <img
-              src="/images/card2.jpg"
-              alt="img"
-            />
-          </div>
-          <div class="poster">
-            <img
-              src="/images/card3.jpg"
-              alt="img"
-            />
-          </div>
-         </div>
           <div class="poster2">
-            <img
-              src="/images/storeBanner.png"
-              alt="img"
-            />
-          
+            <img src="images/storeBanner.png" alt="img" />
           </div>
         </div>
       </section>
@@ -211,11 +213,10 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <div class="cart-card-container"> 
-      </div>
+      <div class="cart-card-container"></div>
 
       <!-- checkout -->
-      
+
       <div class="checkout">
         <div class="bill">
           <span class="subtotal">Subtotal</span>
