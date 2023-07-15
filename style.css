@@ -105,6 +105,10 @@ body::-webkit-scrollbar-thumb {
   margin-right: 12rem;
 }
 
+.navbar .drop-links {
+  display: none;
+}
+
 .navbar .links a {
   font-size: 1.8rem;
   text-decoration: none;
@@ -112,6 +116,10 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   border: 0.2rem solid transparent;
   transition: all 0.4s ease-in-out;
+}
+
+.navbar .links .close-btn {
+  display: none;
 }
 
 .navbar .links a:hover {
@@ -777,7 +785,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 1200px) {
   html{
-    font-size: 50%;
+    font-size: 56%;
   }
 
   .top-products .product-wrapper .product-list{
@@ -791,12 +799,57 @@ body::-webkit-scrollbar-thumb {
 
 
   /* navbar */
-  .navbar .links {
+
+  .navbar .links{
     display: none;
+  }
+
+  .navbar .drop-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #353333cf;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    z-index: 12;
+    transition: all 0.6s; 
+  }
+
+
+.navbar .drop-links a{
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar .drop-links a:hover{
+  color: #00ffb3;
+  transition: all 0.2s;
+}
+
+.navbar .drop-links .close-btn{
+  display: block;
+  background: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  height: fit-content;
+  width: 33px;
 }
 
 .navbar .menu{
   display: block;
+}
+.main-container .slid-container .slid-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 4px 0px, rgba(60, 64, 67, 0.15) 0px -1px 4px 0px;
 }
 
 .all-categorys .wrapper .category-list {
@@ -822,8 +875,11 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 768px){
   html{
-    font-size: 40%;
+    font-size: 52%;
   }
+  .header .navbar {
+    padding: 2rem 3rem;
+}
   .top-products .product-wrapper .product-list {
     width: 460vw;
 }
@@ -831,17 +887,34 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 625px){
   html{
-    font-size: 30%;
+    font-size: 51%;
   }
-  .top-products .product-wrapper .product-list {
-    width: 463vw;
+
+  .all-categorys .wrapper .category-list {
+    width: 254vw;
+}
+
+.top-products .product-wrapper .product-list {
+    width: 645vw;
+}
+.footer .footer-links .feedback-form{
+  display: none;
 }
 }
 
 @media only screen and (max-width: 500px){
   html{
-    font-size: 40%;
+    font-size: 48%;
   }
+  .main-container {
+    padding: 0 5rem;
+}
+  .main-container .slid-container{
+    width: 100%;
+  }
+  .main-container .slid-container .slid-card img {
+    width: 78vw;
+}
 
   .all-categorys .wrapper .category-list {
     width: 262vw;
@@ -850,16 +923,26 @@ body::-webkit-scrollbar-thumb {
   .top-products .product-wrapper .product-list {
     width: 660vw;
 }
-
-.footer .footer-links .feedback-form{
-  display: none;
+.footer .footer-links ul li {
+  font-size: 1.2rem;
 }
+
 }
 
 @media only screen and (max-width: 425px){
   html{
-    font-size: 32%;
+    font-size: 45%;
   }
+.navbar .logo h2 {
+    font-size: 2.8rem;
+}
+  .all-categorys .wrapper .category-list {
+    width: 380vw;
+}
+.cart {
+    height: 4.8rem;
+  width: 6.8rem;
+}
   .footer .contect-container{
     flex-direction: column;
     gap: 3.5rem;
@@ -868,8 +951,11 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 325px){
   html{
-    font-size: 40%;
+    font-size: 42%;
   }
+  .navbar .logo h2 {
+    font-size: 2.6rem;
+}
 
   .all-categorys .wrapper .category-list {
     width: 365vw;

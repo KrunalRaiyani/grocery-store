@@ -6,7 +6,23 @@ let cartContainer = document.querySelector(".cart-container");
 let cartClose = document.querySelector(".cart-close");
 let categoryContainer = document.querySelector(".category-list");
 let cartCardContainer = document.querySelector(".cart-card-container");
+let menu = document.querySelector(".menu");
+let sedeBar = document.querySelector(".drop-links");
+let closeSideBar = document.querySelector(".close-btn");
 let listData = '';
+
+
+
+// menu open close
+
+menu.addEventListener('click',()=>{
+  sedeBar.style="transform: translateX(100%);"
+})
+
+closeSideBar.addEventListener('click',()=>{
+  sedeBar.style=" transform: translateX(-100%)"
+})
+
 
 // offet slider
 let slideWidth = slide.scrollWidth;
