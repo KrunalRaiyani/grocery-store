@@ -935,14 +935,14 @@ body::-webkit-scrollbar-thumb {
     padding: 2.8rem 3rem;
   }
   .navbar .logo h2 {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
   }
   .navbar .menu {
-    font-size: 2.9rem;
+    font-size: 3rem;
   }
   .cart {
-    height: 5.8rem;
-    width: 7.8rem;
+    height: 5.9rem;
+    width: 7.9rem;
   }
   .all-categorys .wrapper .category-list {
     width: 254vw;
@@ -960,9 +960,6 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 325px) {
   html {
     font-size: 42%;
-  }
-  .navbar .logo h2 {
-    font-size: 2.6rem;
   }
 
   .all-categorys .wrapper .category-list {
